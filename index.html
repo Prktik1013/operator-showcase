@@ -33,24 +33,26 @@
       --fg: oklch(24% 0.035 250);
       --muted: oklch(42% 0.02 250);
       --accent: oklch(58% 0.11 55);
+      --c-accent: oklch(58% 0.11 55);
       --accent-hex: #b87333;
       --navy-hex: #1a2f4a;
       --border: oklch(88% 0.01 95);
       --radius: 4px;
       --shadow: 0 12px 40px oklch(24% 0.035 250 / 0.08);
-      --font-d: 'Fraunces', Georgia, serif;
-      --font-b: 'Source Sans 3', system-ui, sans-serif;
+      --f-display: 'Fraunces', Georgia, serif;
+      --f-body: 'Source Sans 3', system-ui, sans-serif;
+      --fs-hero: clamp(2.25rem, 5vw, 3.5rem);
+      --fs-h2: clamp(1.5rem, 3vw, 2.25rem);
+      --fs-body: 1.0625rem;
       --space: clamp(1rem, 2vw, 1.5rem);
-      --type-hero: clamp(2.25rem, 5vw, 3.5rem);
-      --type-h2: clamp(1.5rem, 3vw, 2.25rem);
     }
 
     *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: var(--font-b);
-      font-size: 1.0625rem;
+      font-family: var(--f-body);
+      font-size: var(--fs-body);
       line-height: 1.55;
       color: var(--fg);
       background: var(--bg);
@@ -58,8 +60,8 @@
 
     img, svg { display: block; max-width: 100%; }
     a { color: var(--accent-hex); }
-    h1, h2, h3 { font-family: var(--font-d); font-weight: 600; line-height: 1.15; margin: 0 0 0.75rem; }
-    h2 { font-size: var(--type-h2); }
+    h1, h2, h3 { font-family: var(--f-display); font-weight: 600; line-height: 1.15; margin: 0 0 0.75rem; }
+    h2 { font-size: var(--fs-h2); }
     p { margin: 0 0 1rem; }
 
     .skip-link {
@@ -102,7 +104,7 @@
     }
 
     .brand-name {
-      font-family: var(--font-d);
+      font-family: var(--f-display);
       font-size: 1.05rem;
       font-weight: 600;
       line-height: 1.2;
@@ -181,13 +183,13 @@
     }
 
     #hero h1 {
-      font-size: var(--type-hero);
+      font-size: var(--fs-hero);
       letter-spacing: -0.02em;
     }
 
     .hero-line {
       display: block;
-      font-family: var(--font-d);
+      font-family: var(--f-display);
       font-size: clamp(1.25rem, 2.5vw, 1.65rem);
       font-weight: 500;
       color: var(--muted);
@@ -233,6 +235,12 @@
       border: 2px solid var(--border);
       border-radius: var(--radius);
       background: var(--surface);
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+    .cta-secondary:hover,
+    .cta-secondary:focus-visible {
+      border-color: var(--accent-hex);
+      color: var(--accent-hex);
     }
 
     .hero-visual {
@@ -290,11 +298,16 @@
       border-left: 3px solid var(--accent-hex);
       background: color-mix(in srgb, var(--bg) 70%, var(--surface));
       border-radius: 0 var(--radius) var(--radius) 0;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+    .trust-item:hover {
+      transform: translateY(-2px);
+      border-color: var(--fg);
     }
 
     .trust-item strong {
       display: block;
-      font-family: var(--font-d);
+      font-family: var(--f-display);
       font-size: 1.1rem;
       margin-bottom: 0.35rem;
     }
@@ -319,6 +332,11 @@
       border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: 0 4px 16px oklch(24% 0.035 250 / 0.04);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .services-list li:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
     }
 
     .services-list h3 {
@@ -405,7 +423,7 @@
     .cta-phone-large {
       display: inline-block;
       margin-top: 1rem;
-      font-family: var(--font-d);
+      font-family: var(--f-display);
       font-size: clamp(1.5rem, 4vw, 2.25rem);
       font-weight: 600;
       text-decoration: none;
@@ -468,6 +486,11 @@
       .hero-visual {
         animation: fade-in 0.9s ease 0.15s both;
       }
+      .reveal-on-scroll {
+        animation: reveal 0.8s ease both;
+      }
+      .trust-item:nth-child(2) { animation: reveal 0.6s ease 0.1s both; }
+      .trust-item:nth-child(3) { animation: reveal 0.6s ease 0.2s both; }
       @keyframes fade-up {
         from { opacity: 0; transform: translateY(14px); }
         to { opacity: 1; transform: translateY(0); }
@@ -475,6 +498,10 @@
       @keyframes fade-in {
         from { opacity: 0; transform: scale(1.02); }
         to { opacity: 1; transform: scale(1); }
+      }
+      @keyframes reveal {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
       }
     }
   </style>
