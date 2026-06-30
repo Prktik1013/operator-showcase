@@ -1,0 +1,28 @@
+{
+  "schema": "open-design.design-manifest.v1",
+  "title": "operator-showcase-brand",
+  "entryFile": "operator-showcase-brand.html",
+  "tokens": {
+    "required": ["background", "surface", "foreground", "muted text", "border", "accent", "radius", "shadow", "spacing", "type scale", "motion"],
+    "values": {
+      "background": "oklch(97% 0.008 95)",
+      "surface": "oklch(100% 0.002 95)",
+      "foreground": "oklch(24% 0.035 250)",
+      "accent": "oklch(58% 0.11 55)",
+      "displayFont": "Fraunces",
+      "bodyFont": "Source Sans 3"
+    }
+  },
+  "screens": [
+    {
+      "file": "operator-showcase-brand.html",
+      "role": "brand-identity-guide"
+    }
+  ],
+  "implementationChecklist": [
+    "Extract tokens from brand guide before building index.html",
+    "Match Fraunces + Source Sans 3 pairing",
+    "Use copper accent for CTAs and pipe mark only",
+    "Phone (714) 847-2910 exact in site"
+  ]
+}

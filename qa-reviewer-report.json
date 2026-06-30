@@ -1,0 +1,12 @@
+{
+  "shipPass": true,
+  "verdict": "SHIP_PASS",
+  "checks": [
+    { "id": "phone-exact", "pass": true, "evidence": "tel:(714)847-2910 throughout" },
+    { "id": "anti-slop", "pass": true, "evidence": "gate report PASS" },
+    { "id": "brand-fidelity", "pass": true, "evidence": "tokens match DESIGN-MANIFEST.json" },
+    { "id": "brand-package", "pass": true, "evidence": "brand/ complete with BRAND-APPROVED" }
+  ],
+  "fixAssignee": "",
+  "cycle": 1
+}

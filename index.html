@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harbor Lane Plumbing — Garden Grove CA</title>
+  <meta name="description" content="Harbor Lane Plumbing in Garden Grove CA. Owner-answered line. Same-night drains, leaks, and water heaters. Call (714) 847-2910." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Plumber",
+    "name": "Harbor Lane Plumbing",
+    "telephone": "+1-714-847-2910",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Garden Grove",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Garden Grove"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --bg: oklch(97% 0.008 95);
+      --surface: oklch(100% 0.002 95);
+      --fg: oklch(24% 0.035 250);
+      --muted: oklch(42% 0.02 250);
+      --accent: oklch(58% 0.11 55);
+      --accent-hex: #b87333;
+      --navy-hex: #1a2f4a;
+      --border: oklch(88% 0.01 95);
+      --radius: 4px;
+      --shadow: 0 12px 40px oklch(24% 0.035 250 / 0.08);
+      --font-d: 'Fraunces', Georgia, serif;
+      --font-b: 'Source Sans 3', system-ui, sans-serif;
+      --space: clamp(1rem, 2vw, 1.5rem);
+      --type-hero: clamp(2.25rem, 5vw, 3.5rem);
+      --type-h2: clamp(1.5rem, 3vw, 2.25rem);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font-b);
+      font-size: 1.0625rem;
+      line-height: 1.55;
+      color: var(--fg);
+      background: var(--bg);
+    }
+
+    img, svg { display: block; max-width: 100%; }
+    a { color: var(--accent-hex); }
+    h1, h2, h3 { font-family: var(--font-d); font-weight: 600; line-height: 1.15; margin: 0 0 0.75rem; }
+    h2 { font-size: var(--type-h2); }
+    p { margin: 0 0 1rem; }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--fg);
+      color: var(--bg);
+      padding: 0.5rem 1rem;
+      z-index: 100;
+    }
+    .skip-link:focus { left: 0; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.75rem clamp(1rem, 4vw, 2.5rem);
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--fg);
+      min-width: 0;
+    }
+
+    .brand-logo {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+    }
+
+    .brand-name {
+      font-family: var(--font-d);
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .header-phone {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      min-width: 44px;
+      padding: 0.5rem 1rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      color: var(--surface);
+      background: var(--fg);
+      border-radius: var(--radius);
+      white-space: nowrap;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .header-phone:hover,
+    .header-phone:focus-visible {
+      background: color-mix(in srgb, var(--fg) 85%, var(--accent-hex));
+      transform: translateY(-1px);
+    }
+
+    main { display: block; }
+
+    section {
+      padding: clamp(3rem, 8vw, 5rem) clamp(1rem, 4vw, 2.5rem);
+    }
+
+    .section-inner {
+      max-width: 72rem;
+      margin: 0 auto;
+    }
+
+    /* LAYOUT: split-rail-hero */
+    #hero {
+      padding-top: clamp(2rem, 5vw, 3.5rem);
+      padding-bottom: clamp(2.5rem, 6vw, 4rem);
+      background:
+        linear-gradient(135deg, color-mix(in srgb, var(--bg) 94%, var(--fg) 6%) 0%, var(--bg) 55%),
+        repeating-linear-gradient(
+          -12deg,
+          transparent,
+          transparent 28px,
+          oklch(24% 0.035 250 / 0.03) 28px,
+          oklch(24% 0.035 250 / 0.03) 29px
+        );
+    }
+
+    .split-rail-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+      gap: clamp(1.5rem, 4vw, 3rem);
+      align-items: center;
+      max-width: 72rem;
+      margin: 0 auto;
+    }
+
+    .hero-rail {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .eyebrow {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    #hero h1 {
+      font-size: var(--type-hero);
+      letter-spacing: -0.02em;
+    }
+
+    .hero-line {
+      display: block;
+      font-family: var(--font-d);
+      font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+      font-weight: 500;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .cta-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0.75rem 1.35rem;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      color: var(--surface);
+      background: var(--accent-hex);
+      border-radius: var(--radius);
+      border: 2px solid var(--accent-hex);
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+    .cta-primary:hover,
+    .cta-primary:focus-visible {
+      background: color-mix(in srgb, var(--accent-hex) 88%, var(--fg));
+      color: var(--surface);
+    }
+
+    .cta-secondary {
+      display: inline-flex;
+      align-items: center;
+      min-height: 48px;
+      padding: 0.75rem 1.25rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--fg);
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .hero-visual {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      min-height: 280px;
+    }
+
+    .hero-photo {
+      width: 100%;
+      height: 100%;
+      min-height: clamp(280px, 42vw, 480px);
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        160deg,
+        oklch(24% 0.035 250 / 0.12) 0%,
+        transparent 45%,
+        oklch(58% 0.11 55 / 0.08) 100%
+      );
+      pointer-events: none;
+    }
+
+    .hero-mark {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      width: 56px;
+      height: 56px;
+      filter: drop-shadow(0 4px 12px oklch(24% 0.035 250 / 0.25));
+    }
+
+    #trust {
+      background: var(--surface);
+      border-block: 1px solid var(--border);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+
+    .trust-item {
+      padding: 1.25rem;
+      border-left: 3px solid var(--accent-hex);
+      background: color-mix(in srgb, var(--bg) 70%, var(--surface));
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+
+    .trust-item strong {
+      display: block;
+      font-family: var(--font-d);
+      font-size: 1.1rem;
+      margin-bottom: 0.35rem;
+    }
+
+    #services {
+      background:
+        linear-gradient(180deg, var(--bg) 0%, color-mix(in srgb, var(--bg) 90%, var(--fg) 10%) 100%);
+    }
+
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    .services-list li {
+      padding: 1.35rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 16px oklch(24% 0.035 250 / 0.04);
+    }
+
+    .services-list h3 {
+      font-size: 1.15rem;
+      color: var(--accent-hex);
+    }
+
+    #proof {
+      background: var(--surface);
+    }
+
+    .review-quotes {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .review-quote {
+      margin: 0;
+      padding: 1.15rem 1.35rem;
+      border-left: 3px solid var(--accent-hex);
+      background: color-mix(in srgb, var(--surface) 92%, var(--accent) 8%);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-size: 1.02rem;
+    }
+
+    .review-quote p {
+      margin: 0;
+      font-style: italic;
+    }
+
+    #about .about-panel {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .about-facts {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .about-facts li {
+      padding: 0.65rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    #area {
+      background: color-mix(in srgb, var(--bg) 85%, var(--fg) 15%);
+      color: var(--surface);
+    }
+
+    #area h2 { color: var(--surface); }
+    #area p { color: oklch(92% 0.01 95); }
+
+    .area-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1.25rem 0 1.5rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .area-tags li {
+      padding: 0.4rem 0.85rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      background: oklch(24% 0.035 250 / 0.5);
+      border: 1px solid oklch(58% 0.11 55 / 0.4);
+      border-radius: 999px;
+    }
+
+    #cta {
+      text-align: center;
+      background: var(--bg);
+      border-top: 1px solid var(--border);
+    }
+
+    #cta h2 { margin-bottom: 0.5rem; }
+
+    .cta-phone-large {
+      display: inline-block;
+      margin-top: 1rem;
+      font-family: var(--font-d);
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--fg);
+    }
+
+    .site-footer {
+      padding: 2rem clamp(1rem, 4vw, 2.5rem);
+      background: var(--fg);
+      color: oklch(88% 0.01 95);
+      font-size: 0.875rem;
+    }
+
+    .site-footer .section-inner {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .legal-block {
+      margin: 0;
+      max-width: 52rem;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .footer-meta {
+      margin: 0;
+      font-size: 0.8rem;
+      opacity: 0.75;
+    }
+
+    @media (max-width: 768px) {
+      .split-rail-hero {
+        grid-template-columns: 1fr;
+      }
+      .hero-visual { order: -1; }
+      #about .about-panel {
+        grid-template-columns: 1fr;
+      }
+      .brand-name { font-size: 0.95rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-rail > * {
+        animation: fade-up 0.7s ease both;
+      }
+      .hero-rail > *:nth-child(2) { animation-delay: 0.08s; }
+      .hero-rail > *:nth-child(3) { animation-delay: 0.16s; }
+      .hero-rail > *:nth-child(4) { animation-delay: 0.24s; }
+      .hero-rail > *:nth-child(5) { animation-delay: 0.32s; }
+      .hero-visual {
+        animation: fade-in 0.9s ease 0.15s both;
+      }
+      @keyframes fade-up {
+        from { opacity: 0; transform: translateY(14px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes fade-in {
+        from { opacity: 0; transform: scale(1.02); }
+        to { opacity: 1; transform: scale(1); }
+      }
+    }
+  </style>
+</head>
+<!-- DESIGN.md brand binding: navy oklch(24% 0.035 250), copper accent #b87333, cream bg oklch(97% 0.008 95) — Fraunces + Source Sans 3 per DESIGN-MANIFEST.json -->
+<body
+  data-archetype="plumbing"
+  data-taste-dials="variance=medium-high;motion=moderate;density=balanced"
+  data-layout-composition="split-rail-hero"
+>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand-lockup" href="#hero" aria-label="Harbor Lane Plumbing home">
+      <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Harbor Lane Plumbing mark">
+        <title>Harbor Lane Plumbing</title>
+        <image href="assets/logo-mark.svg" width="64" height="64" />
+      </svg>
+      <span class="brand-name">Harbor Lane Plumbing</span>
+    </a>
+    <a class="header-phone" href="tel:(714)847-2910">(714) 847-2910</a>
+  </header>
+
+  <main id="main" data-layout-section-order="hero,trust,services,proof,about,area,cta">
+
+    <section id="hero" aria-label="Hero">
+      <div class="split-rail-hero">
+        <div class="hero-rail">
+          <p class="eyebrow">Garden Grove CA · Residential plumbing</p>
+          <h1>Harbor Lane Plumbing</h1>
+          <span class="hero-line">Same-night help when your water heater quits in Garden Grove.</span>
+          <p>When a pipe fails at 10pm, you need someone local who answers — not a call center three cities away. Owner picks up. Clear price before we turn a wrench.</p>
+          <div class="hero-actions">
+            <a class="cta-primary" href="tel:(714)847-2910">Call (714) 847-2910</a>
+            <a class="cta-secondary" href="#services">See services</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img class="hero-photo" src="assets/hero.webp" alt="Harbor Lane Plumbing technician at a Garden Grove home" width="800" height="600" loading="eager" fetchpriority="high" decoding="async" />
+          <svg class="hero-mark brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
+            <path fill="#b87333" d="M12 44c0-14 10-24 20-24s20 10 20 24v4H12v-4z"/>
+            <path fill="#1a2f4a" d="M20 20h24v6H20zm4 10h16v4H24zm-4 14h24v6H20z"/>
+            <circle cx="32" cy="14" r="6" fill="#b87333"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="trust" data-trust="local" aria-label="Trust signals">
+      <div class="section-inner">
+        <h2>Local crew. Plain answers.</h2>
+        <p>Family-operated in Garden Grove. We show up for same-night drains, slab leaks, and water heaters — with the number above the fold, not buried in a form.</p>
+        <div class="trust-grid">
+          <div class="trust-item">
+            <strong>Owner answers</strong>
+            <p>Call <a href="tel:(714)847-2910">(714) 847-2910</a> and talk to the person who runs the jobs — not a routing queue.</p>
+          </div>
+          <div class="trust-item">
+            <strong>Price before work</strong>
+            <p>We explain the fix and the cost in plain English before any wrench turns.</p>
+          </div>
+          <div class="trust-item">
+            <strong>Care on site</strong>
+            <p>Boot covers, floor protection, and a clean handoff when the job is done.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" aria-label="Services">
+      <div class="section-inner">
+        <h2>What we handle</h2>
+        <p>Residential and light commercial plumbing along the Harbor Boulevard corridor and west Orange County.</p>
+        <ul class="services-list">
+          <li>
+            <h3>Emergency drains &amp; leaks</h3>
+            <p>Same-night response when a line backs up or a fitting lets go after hours.</p>
+          </li>
+          <li>
+            <h3>Water heaters</h3>
+            <p>Tank and tankless repair, replacement, and clear pricing before we start.</p>
+          </li>
+          <li>
+            <h3>Slab leak detection</h3>
+            <p>Locate and repair slab leaks with minimal disruption to floors and finishes.</p>
+          </li>
+          <li>
+            <h3>Repipes for older homes</h3>
+            <p>Galvanized and polybutylene repipes for tract homes near Harbor and west Garden Grove.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="proof" data-proof="harvested" aria-label="Customer proof">
+      <div class="section-inner">
+        <h2>What Garden Grove homeowners say</h2>
+        <p>Quotes below come from verified neighbor reviews. Call <a href="tel:(714)847-2910">(714) 847-2910</a> for current references.</p>
+        <div class="review-quotes">
+          <blockquote class="review-quote">
+            <p>"They came out same night when our water heater failed — clear price before any work started."</p>
+          </blockquote>
+          <blockquote class="review-quote">
+            <p>"Honest crew, protected our floors, and fixed the slab leak without tearing up half the house."</p>
+          </blockquote>
+          <blockquote class="review-quote">
+            <p>"We've used Harbor Lane twice now. Owner picks up. Work matches the quote."</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" aria-label="About Harbor Lane Plumbing">
+      <div class="section-inner about-panel">
+        <div>
+          <h2>About Harbor Lane Plumbing</h2>
+          <p>Harbor Lane Plumbing serves Garden Grove and west Orange County with residential and light commercial work. When pressure spikes at night, our crew answers the main line and shows up ready to diagnose — drains, leaks, water heaters, and repipes for older tract homes near Harbor Boulevard.</p>
+          <p>We keep the job site tidy, explain the repair in plain English, and match the work to the quote you approved.</p>
+        </div>
+        <ul class="about-facts">
+          <li><strong>Based in</strong> Garden Grove, CA</li>
+          <li><strong>Focus</strong> Drains, leaks, water heaters, slab leaks, repipes</li>
+          <li><strong>Line</strong> <a href="tel:(714)847-2910">(714) 847-2910</a> — owner-answered</li>
+          <li><strong>Style</strong> Same-day language, honest pricing, local proof</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="area" aria-label="Service area">
+      <div class="section-inner">
+        <h2>Service area</h2>
+        <p>We respond across Garden Grove and nearby west Orange County neighborhoods — especially older tract homes and light commercial strips along Harbor.</p>
+        <ul class="area-tags">
+          <li>Garden Grove</li>
+          <li>West Garden Grove</li>
+          <li>Harbor Blvd corridor</li>
+          <li>Westminster</li>
+          <li>Anaheim (west)</li>
+          <li>Stanton</li>
+        </ul>
+        <a class="cta-primary" href="tel:(714)847-2910">Schedule a call: (714) 847-2910</a>
+      </div>
+    </section>
+
+    <section id="cta" aria-label="Call to action">
+      <div class="section-inner">
+        <h2>Pipe issue tonight?</h2>
+        <p>Tap to call Harbor Lane Plumbing in Garden Grove. We answer, quote clearly, and show up.</p>
+        <a class="cta-phone-large" href="tel:(714)847-2910">(714) 847-2910</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-inner">
+      <p class="legal-block">This is a one-time website build. You own all delivered files and may host or modify them yourself. The site is provided as-is after delivery. We do not guarantee rankings, leads, or revenue. You are responsible for accuracy of your business information, domain registration, and hosting. This site was produced with AI-assisted tools and human review.</p>
+      <p class="footer-meta">© Harbor Lane Plumbing · Garden Grove, CA · <a href="tel:(714)847-2910" style="color:inherit">(714) 847-2910</a></p>
+    </div>
+  </footer>
+</body>
+</html>
