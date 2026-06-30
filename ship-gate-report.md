@@ -11,7 +11,7 @@
 | S2 | LOGO_QUALITY | PASS | logo quality OK |
 | S3 | COPY_UNIQUENESS | PASS | swap-breaks=18 sentences (need>=2) |
 | S4 | NO_TEMPLATE_TELLS | PASS | No template phrases |
-| S5 | HUMAN_READ_ALOUD | PASS | PASS 9 owner voice verified for Harbor Lane Plumbing â€” short sentences, local proof, no agency filler |
+| S5 | HUMAN_READ_ALOUD | PASS | PASS 9 owner voice verified for Harbor Lane Plumbing - short sentences, local proof, no agency filler |
 | S6 | TIER=SHIP | PASS | BRIEF Output Tier SHIP |
 | S7 | ENRICHMENT_COMPLETE | PASS | persona+visual+depth OK |
 | S8 | CRITIQUE_GATE | PASS | critique-report has no unresolved Fix items |

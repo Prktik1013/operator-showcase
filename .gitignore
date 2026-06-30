@@ -6,3 +6,6 @@ SELF-CERT.md
 build-output.log
 handoffs.md
 decisions.md
+
+.showcase-serve-*.lock
+

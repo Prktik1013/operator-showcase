@@ -17,7 +17,7 @@
 | 6 | Motion + cinematic dial | PASS | CSS media query present |
 | 7 | Brand-aligned imagery | PASS | No generic stock URLs |
 | 8 | CTA in 3 seconds | PASS | Above-fold CTA + tel: (Chrome DevTools report if available) |
-| 9 | Read-out-loud test | PASS | PASS 9 owner voice verified for Harbor Lane Plumbing â€” short sentences, local proof, no agency filler |
+| 9 | Read-out-loud test | PASS | PASS 9 owner voice verified for Harbor Lane Plumbing - short sentences, local proof, no agency filler |
 | 10 | SELF-CERT.md evidence | PASS | Present |
 | 11 | Technical baseline | PASS | viewport, title, description, JSON-LD, tel:, size |
 | 12 | Business specificity (tightened) | PASS | sections=7 h1=True trust=True spec=True badHeroLine=False |
